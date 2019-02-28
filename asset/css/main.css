@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    background: #acdbdf;
+    color: white;
+}
+
+.canvas{
+    width: auto;
+    padding: 11px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #309286;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+
+#judul {
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 75px);
+    grid-gap: 5px;
+}
+
+
+.card {
+    display: inline-block;
+    width: 71px;
+    height: 96px;
+    margin: 5px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    color: black;
+    border: 2px white solid;
+}
+
+.card__face {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.front {
+    background: url("../image/back.png");
+    background-size: 70px 95px;
+}
+
+.back {
+    background: #ffd14f;
+    padding-top: 30px;
+    transform: rotateY( 180deg);
+}
+
+.card.is-flipped {
+    transform: rotateY(180deg);
+}

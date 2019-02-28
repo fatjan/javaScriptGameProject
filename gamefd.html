@@ -1,11 +1,45 @@
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="asset/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-        <link href="asset/css/main.css" rel="stylesheet" type="text/css">
-        <title>Horror Game</title>
-    </head>
-    <body>
-        <script src="asset/js/setting.js"></script>
-    </body>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./asset/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="./asset/css/main.css" rel="stylesheet" type="text/css">
+    <audio controls autoplay hidden src="asset/image/mega-man-8-stage-select.mp3"></audio> 
+
+    <title>Battle Card Game</title>
+</head>
+<!-- onload="startGame()" -->
+
+<body>
+    <div class="container-fluid">
+        <div class="canvas">
+            <div class="row text-center">
+                <div class="col-md-4 offset-md-4" id="judul">
+                    <h2>Yu Gi Aaah!</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 player1">
+                    <p>--------- Flip Your Cards ---------</p>
+
+                    <p3>Score Player 1</p3><br>
+                </div>
+                <div class="col-lg-4">
+                    <div id="board"></div>
+                    <a href="gamefd.html"><button class="btn btn-dark">Restart</button></a>
+                </div>
+                <div class="col-lg-4 player2">
+                    <p>--------- Flip Your Cards ---------</p>
+
+                    <p3>Score Player 2</p3><br>
+                </div>
+                <!-- <div class="col-lg-7 col-md-7"></div> -->
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="./asset/js/game.js"></script>
+    <script src="./asset/js/card.js"></script>
+</body>
+
 </html>
