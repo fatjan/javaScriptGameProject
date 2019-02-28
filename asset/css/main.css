@@ -67,3 +67,7 @@ body {
 .card.is-flipped {
     transform: rotateY(180deg);
 }
+
+.btn {
+    width: 100px;
+}

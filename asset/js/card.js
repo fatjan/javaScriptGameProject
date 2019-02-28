@@ -1,5 +1,6 @@
 const game = require('./game');
 
+// Fungsi yang menampilkan hasil permainan
 function gameResult(scorePlayer1, scorePlayer2) {
     if (scorePlayer1 > scorePlayer2) {
         var one_alert_1 = document.createElement("span");
@@ -13,6 +14,8 @@ function gameResult(scorePlayer1, scorePlayer2) {
         var br_win_2 = document.createElement("br");
         document.getElementsByClassName("player2")[0].appendChild(one_alert_2);
         document.getElementsByClassName("player2")[0].appendChild(br_win_2);
+
+
     } else if (scorePlayer1 < scorePlayer2) {
         var two_alert_1 = document.createElement("span");
         two_alert_1.innerHTML = "Player 1 Lose"
@@ -25,7 +28,9 @@ function gameResult(scorePlayer1, scorePlayer2) {
         var br_win_4 = document.createElement("br");
         document.getElementsByClassName("player2")[0].appendChild(two_alert_2);
         document.getElementsByClassName("player2")[0].appendChild(br_win_4);
-    } else if ((scorePlayer1 === scorePlayer2)){
+
+        
+    } else if ((scorePlayer1 === scorePlayer2)) {
         var draw_alert_1 = document.createElement("span");
         draw_alert_1.innerHTML = "DRAW"
         var br_win_5 = document.createElement("br");
